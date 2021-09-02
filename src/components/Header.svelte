@@ -3,7 +3,9 @@
 </script>
 
 <header>
-  <a href="/">⚫︎</a>
+  <div class="wrapper">
+    <a href="/"><span class="circle"></span></a>
+  </div>
 </header>
 
 <style lang="scss">
@@ -16,14 +18,25 @@
     justify-content: flex-start;
   }
 
-  a {
-    font-family: 'Segoe UI Symbol';
-    text-decoration: none;
-    color: var(--grey);
-    font-size: 2.5rem;
+  .wrapper {
+    max-width: 65rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--grey);
+    border-radius: 50%;
+    display: block;
 
     &:hover {
-      color: var(--maroon);
+      background-color: var(--maroon)
     }
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>

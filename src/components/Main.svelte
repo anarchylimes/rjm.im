@@ -2,7 +2,9 @@
 </script>
 <style>
   main {
-    width: 60rem;
+    max-width: 67rem;
+    width: 100%;
+    padding: 1rem;
     margin: 2rem auto;
   }
 </style>

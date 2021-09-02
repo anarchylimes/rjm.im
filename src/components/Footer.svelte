@@ -11,9 +11,11 @@
 </script>
 
 <footer>
-  {#if weather}
-     <p>{weather.current_condition[0]["weatherDesc"][0].value} // {weather.current_condition[0]["FeelsLikeF"]}°F</p>
-  {/if}
+  <div class="wrapper">
+    {#if weather}
+      <p>{weather.current_condition[0]["weatherDesc"][0].value} // {weather.current_condition[0]["FeelsLikeF"]}°F</p>
+    {/if}
+  </div>
 </footer>
 
 <style>
@@ -24,5 +26,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .wrapper {
+    max-width: 65rem;
+    width: 100%;
+    margin: 0 auto;
   }
 </style>
