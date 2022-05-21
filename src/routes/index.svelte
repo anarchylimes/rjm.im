@@ -6,5 +6,6 @@
 <style>
   h1 {
     letter-spacing: -0.025rem;
+    font-weight: normal;
   }
 </style>
