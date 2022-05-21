@@ -2,7 +2,7 @@
   import ky from 'ky';
   let weather
   const getWeather = async () => {
-    const getweatherInfo = await ky.get('https://wttr.in/23230?format=j1').json();
+    const getweatherInfo = await ky.get('https://wttr.in/ric?format=j1').json();
     weather = getweatherInfo
   };
 

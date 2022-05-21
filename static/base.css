@@ -1,18 +1,29 @@
+@font-face {
+  font-family: 'SulMono';
+  src: url('sulmono.woff2') format('woff2')
+}
+
 :root {
   --red: #E65F5C;
   --maroon: #B33951;
   --grey: #E7EAEE;
   --yellow: #E9DF00;
   --darkgrey: #111111;
+  --black: #000;
+  --font: 'SulMono'
 }
 
 body {
-  font-family: 'SF Mono', Menlo, Consolas, Monaco, Liberation Mono,
+  font-family: 'SulMono', 'SF Mono', Menlo, Consolas, Monaco, Liberation Mono,
     Lucida Console, monospace;
-  color: var(--darkgrey);
-  background-color: var(--grey);
+  color: var(--grey);
+  background-color: var(--black);
   height: 100vh;
   width: 100%;
+  text-shadow: 0 0 5px var(--grey);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 130%;
 }
 
 #svelte {

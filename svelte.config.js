@@ -8,7 +8,6 @@ export default {
 			pages: 'build',
 			assets: 'build',
 			fallback: null
-		}),
-    target: '#svelte',
+		})
   },
 };
