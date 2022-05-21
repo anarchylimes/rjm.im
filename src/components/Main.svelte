@@ -14,7 +14,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: url(noise.gif);
+      background: url('../img/noise.gif');
       opacity: .05;
       pointer-events: none;
     }
