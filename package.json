@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "ky": "^0.28.7",
+    "letterizejs": "^2.0.1",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
     "sass": "^1.52.1"
