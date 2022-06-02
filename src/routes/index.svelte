@@ -7,19 +7,15 @@
       targets: 'h1'
     })
     const setRandomSpan = () => {
-      let random
       const spans = document.querySelectorAll('h1 > span')
       spans.forEach(span => {
-        random = Math.random()
+        let random = Math.random()
         if (random > .6) {
           span.classList.toggle('flipped')
         }
       })
     }
     setRandomSpan()
-    return () => {
-      clearInterval(interval)
-    }
   })
 </script>
 
