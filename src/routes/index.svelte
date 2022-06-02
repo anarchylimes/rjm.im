@@ -1,11 +1,7 @@
 <script>
   import { onMount } from 'svelte'
-  import Letterize from 'letterizejs'
 
   onMount(() => {
-    const letters = new Letterize({
-      targets: 'h1'
-    })
     const setRandomSpan = () => {
       const spans = document.querySelectorAll('h1 > span')
       spans.forEach(span => {
